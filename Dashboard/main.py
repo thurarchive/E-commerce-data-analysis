@@ -110,7 +110,7 @@ m = folium.Map(location=[-14.235, -51.925], zoom_start=3, width="100%", height="
 folium.TileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                  attr='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors').add_to(m)
 FastMarkerCluster(data=locations).add_to(m)
-st_folium(m, width=500, height=500)
+st_folium(m)
 
 # Section 3: Sales Analysis
 st.header('Sales Analysis')
