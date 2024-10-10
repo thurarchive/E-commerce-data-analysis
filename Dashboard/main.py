@@ -98,8 +98,8 @@ geo_df = pd.merge(
     how='inner'
 )
 
-# Sample the data to reduce size (e.g., take 5000 random points)
-sampled_geo_df = geo_df.sample(n=5000, random_state=42)
+# Sample the data to reduce size 
+sampled_geo_df = geo_df.sample(n=200, random_state=42)
 
 # Visualize with Folium (using the sampled data)
 st.write("Customer Geolocation Map (Sampled Data)")
